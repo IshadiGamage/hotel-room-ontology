@@ -1,0 +1,1601 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#"
+     xml:base="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#bed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#bed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasBed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasBed">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#bed"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#isBedOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasCityValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasCityValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#CityValuePartition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#RatingValuePartition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasView -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasView">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#view"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#isViewOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#isBedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#isBedOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#bed"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#isViewOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#isViewOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#view"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#view -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#view"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorNoValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorNoValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasNoOfBeds -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasNoOfBeds"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasPriceValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasPriceValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomId"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Average -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Average">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#CityValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#AverageRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#AverageRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#RatingValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Cabana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Cabana">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#CityValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#CityValuePartition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Average"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#High"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Low"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#ValuePartitions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Double -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Double">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasBed"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Economical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Economical">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasPriceValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35000</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Family">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#High">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#CityValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HighRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HighRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#RatingValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HollywoodTwinRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HollywoodTwinRoom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingRoom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasBed"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#kingBed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#CityValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#LowRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#LowRating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#RatingValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#LxuryRooms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#LxuryRooms">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasPriceValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasPriceValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Quad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Quad">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenRoom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasBed"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#RatingValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#RatingValuePartition">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#AverageRating"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HighRating"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#LowRating"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#ValuePartitions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SemiLuxuryRooms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SemiLuxuryRooms">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasPriceValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasPriceValue"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75000</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Single -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Single">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasBed"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Standard">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Suite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Suite">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleRoom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinDoubleRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinDoubleRoom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinRoom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinRoom">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasFloorAreaValue"/>
+                                <owl:allValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</xsd:maxExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#hasRoomCapacityValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HotelRoomTypes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#ValuePartitions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#ValuePartitions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#kingBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#kingBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Bed"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GolfView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GolfView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#kingBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#PoolView -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#PoolView">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#View"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room10F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room10F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Cabana"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room10F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room10F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Cabana"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GolfView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room1F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room1F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room1F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room1F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room2F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room2F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Double"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room2F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room2F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Double"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">43</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room3F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room3F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HollywoodTwinRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#PoolView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room3F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room3F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HollywoodTwinRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#PoolView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room4F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room4F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Single"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#PoolView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room4F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room4F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Single"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#PoolView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room5F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room5F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinDoubleRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room5F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room5F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinDoubleRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GolfView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room6F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room6F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room6F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room6F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#QueenBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room7F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room7F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Suite"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">98000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room7F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room7F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Suite"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room8F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room8F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room8F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room8F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingRoom"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#KingBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#OceanView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room9F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room9F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Quad"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasFloorNoValue>
+        <hasNoOfBeds rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasNoOfBeds>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room9F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Room9F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Quad"/>
+        <hasBed rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+        <hasView rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#GardenView"/>
+        <hasFloorAreaValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</hasFloorAreaValue>
+        <hasFloorNoValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasFloorNoValue>
+        <hasPriceValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57000</hasPriceValue>
+        <hasRoomCapacityValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasRoomCapacityValue>
+        <hasRoomId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasRoomId>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinBed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TwinBed"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Average"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#Low"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#AverageRating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#HighRating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#LowRating"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#DoubleBed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#SingleBed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ishadi/ontologies/2020/10/hotel_rooms#TrippleBed"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
